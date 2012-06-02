@@ -1,0 +1,21 @@
+# encoding: utf-8
+
+class Category
+
+	def initialize
+		@categories = Hash.new
+	end
+
+	def categories
+		@categories
+	end
+
+	def add (data)
+		@categories[data[:symbol]] = data[:value]
+	end
+
+	def at (symbol)
+		@categories[symbol]
+	end
+
+end
